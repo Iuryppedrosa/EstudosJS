@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      //Operadores e Condições
+      var idade = prompt("Digite sua idade: ");
+      if (idade >= 18) {
+        document.write("<h1> Voce e maior de idade </h1>");
+        var idadeComecouAFumar = prompt(
+          "Voce comecou a fumar com quantos anos? "
+        );
+        if (idadeComecouAFumar < 18) {
+          document.write("<h1>Voce tera cancer</h1>");
+        } else {
+          document.write("<h1>Pode continuar a fumar</h1>");
+        }
+      }
+      if (idade < 18) {
+        document.write("<h1> Voce e menor de idade e:</h1>");
+        if (idade <= 12) {
+          document.write("<h1>Voce e uma crianca</h1>");
+        } else {
+          document.write("<h1>Voce e um adolescente</h1>");
+        }
+      }
+      var nome = prompt("Digite seu nome: ");
+      if (nome == "Lucas") {
+        document.write("<h1>Voce e o Lucas</h1>");
+      }
+      if (nome != "Lucas") {
+        document.write("<h1>Voce nao e o Lucas</h1>");
+      }
+      if (nome.length > 5) {
+        document.write("<h1>Nome grande</h1>");
+      }
+      if (idade >= "50") {
+        document.write("<h1>Nome maior que 50</h1>");
+      }
+    </script>
+  </head>
+  <body></body>
+</html>

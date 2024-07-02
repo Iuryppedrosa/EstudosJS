@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      //construir uma calculadora
+      var num1 = prompt("Digite o primeiro número");
+      var num2 = prompt("Digite o segundo número");
+      var operacao = prompt("Digite a operação desejada: +, -, *, /");
+      switch (operacao) {
+        case "+":
+          document.write("<h1>" + (parseInt(num1) + parseInt(num2)) + "</h1>");
+          break;
+        case "-":
+          document.write("<h1>" + (parseInt(num1) - parseInt(num2)) + "</h1>");
+          break;
+        case "*":
+          document.write("<h1>" + parseInt(num1) * parseInt(num2) + "</h1>");
+          break;
+        case "/":
+          document.write("<h1>" + parseInt(num1) / parseInt(num2) + "</h1>");
+          break;
+        default:
+          document.write("<h1>Default</h1>");
+          break;
+      }
+    </script>
+  </head>
+  <body></body>
+</html>
