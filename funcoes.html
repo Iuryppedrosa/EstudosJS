@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Funcoes</title>
+    <script>
+      // em JS também existem funções que nao retornam valores (void)
+      // e com retorno de valores
+      // as funcoes podem ser declaradas no final do scrpit
+      function calcularAreaTerreno(largura, comprimento) {
+        var area = largura * comprimento;
+        console.log(area);
+        return area;
+      }
+      document.write(` a area tem ${calcularAreaTerreno(12, 20)} esse valor`);
+      calcularAreaTerreno(12, 20); // ReferenceError: area is not defined
+
+      function trazendoNome(primeiroNome, segundoNome) {
+        var nomeCompleto = primeiroNome + " " + segundoNome;
+        return nomeCompleto;
+      }
+      var qualSeuNome = prompt("Qual é o seu nome?");
+      var qualSeuSobrenome = prompt("Qual é o seu sobrenome?");
+      document.write(trazendoNome(qualSeuNome, qualSeuSobrenome)); // undefined
+      function somar(a, b) {
+        return a + b;
+      }
+      console.log(somar(2, 3)); // 5
+      console.log(somar(2, 3, 4)); // 5, o js descarta o 4
+      console.log(somar(2)); // NaN
+      console.log(somar()); // NaN
+    </script>
+  </head>
+  <body></body>
+</html>
