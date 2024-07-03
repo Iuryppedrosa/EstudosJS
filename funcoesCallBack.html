@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Funcoes de CallBack</title>
+    <script>
+      function exibirArtigo(id, callbackSucesso, callbackError) {
+        if (false) {
+          callbackSucesso(
+            "Funcoes de callback em Js",
+            "Funcoes de callback sao..."
+          );
+        } else {
+          callbackError("Erro ao recuperar os dados");
+        }
+      }
+      var callbackSucesso = function (titulo, descricao) {
+        document.write("<h1>" + titulo + "</h1>");
+        document.write("<p>" + descricao + "</p>");
+      };
+
+      var callbackError = function (error) {
+        document.write("<h1>Erro</h1>");
+        document.write("<p>" + error + "</p>");
+      };
+
+      exibirArtigo(1, callbackSucesso, callbackError);
+    </script>
+  </head>
+  <body></body>
+</html>

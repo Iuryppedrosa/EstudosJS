@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Funcoes Anonimas</title>
+    <script>
+      // Funcoes anonimas sao funcoes sem nome, que sao
+      // embrulhadas por uma variavel ou passadas como parametro
+      var exibirSaudadao = function () {
+        document.write("Funcao anonima");
+      };
+
+      var exibirSeuNome = function (seuNome) {
+        document.write("Seu nome é: " + seuNome);
+      };
+      exibirSaudadao();
+      document.write("<br />");
+      exibirSeuNome("Joao");
+    </script>
+  </head>
+  <body></body>
+</html>

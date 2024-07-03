@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Manipular String</title>
+    <script>
+      //propriedade LENGTH
+      var nome = "Joao";
+      document.write(nome.length);
+      // saida: 4
+      document.write("<br />");
+      //metodo toUpperCase
+      document.write(nome.toUpperCase());
+      // saida: JOAO
+      document.write("<br />");
+      //metodo toLowerCase
+      document.write(nome.toLowerCase());
+      // saida: joao
+      document.write("<br />");
+      //metodo charAt
+      document.write(nome.charAt(2));
+      // saida: a
+      document.write("<br />");
+      //metodo indexOf
+      document.write(nome.indexOf("o"));
+      // saida: 1
+      document.write("<br />");
+      //metodo lastIndexOf
+      document.write(nome.lastIndexOf("o"));
+      // saida 3
+      document.write("<br />");
+      //metodo replace
+      document.write(nome.replace("J", "X"));
+      // saida: Xoao
+      document.write("<br />");
+      //metodo substring
+      document.write(nome.substring(1, 3));
+      // saida: oa
+      document.write("<br />");
+      //metodo split
+      var nomes = "Joao, Maria, Pedro";
+      var arrayNomes = nomes.split(",");
+      document.write(arrayNomes[0]);
+      document.write("<br />");
+      document.write(arrayNomes[1]);
+      document.write("<br />");
+      document.write(arrayNomes[2]);
+      // saida Joao Maria Pedro
+      document.write("<br />");
+      //metodo trim
+      var nome2 = "  Joao  ";
+      document.write(nome2.trim());
+      // saida: Joao > remove os espacos em branco
+      document.write("<br />");
+      //metodo concat
+      var nome3 = "Joao";
+      var sobrenome = "Silva";
+      document.write(nome3.concat(" ", sobrenome));
+      // saida: Joao Silva
+      document.write("<br />");
+      //metodo slice
+      var nome4 = "Joao Silva";
+      document.write(nome4.slice(0, 4));
+      document.write("<br />");
+      document.write(nome4.slice(5));
+      document.write("<br />");
+      document.write(nome4.slice(-5));
+      // saida: Silva > pega os ultimos 5 caracteres
+      document.write("<br />");
+      //metodo substr
+      var nome5 = "Joao Silva";
+      document.write(nome5.substr(0, 4));
+      document.write("<br />");
+      document.write(nome5.substr(5));
+      document.write("<br />");
+
+      // metodo localeCompare
+      // compara duas strings e retorna 1 se a primeira for maior que a segunda
+      // retorna -1 se a primeira for menor que a segunda
+      var nome6 = "Joao";
+      var nome7 = "Maria";
+      document.write(nome6.localeCompare(nome7));
+      document.write("<br />");
+
+      // metodo match
+      // retorna um array com as ocorrencias encontradas
+      var nome8 = "Joao Silva Silva Mauro, Silva, Jose, Silva, Iury";
+      var resultado = nome8.match(/Silva/g);
+      document.write(resultado);
+      document.write("<br />");
+      // saida: Silva
+
+      // metodo search
+      // retorna a posicao da primeira ocorrencia
+      var nome9 = "Joao Silva Silva Mauro, Silva, Jose, Silva, Iury";
+      document.write(nome9.search(/Silva/));
+
+      // metodo replace
+      // substitui uma string por outra
+      var nome10 = "Joao Silva Silva Mauro, Silva, Jose, Silva, Iury";
+      document.write(nome10.replace(/Silva/g, "X"));
+      document.write("<br />");
+    </script>
+  </head>
+  <body></body>
+</html>
