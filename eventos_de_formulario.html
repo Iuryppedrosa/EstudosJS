@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eventos de forms</title>
+  </head>
+  <body>
+    <form>
+      <input
+        type="text"
+        onfocus="console.log('Campo ganhou o foco')"
+        placeholder="on focus"
+      />
+      <input
+        type="text"
+        onblur="console.log('Campo perdeu o foco')"
+        placeholder="on blur"
+      />
+      <input
+        type="text"
+        oninput="console.log('Campo alterado')"
+        placeholder="on input"
+      />
+      <input
+        type="text"
+        onchange="console.log('Campo alterado e perdeu o foco')"
+        placeholder="on change"
+      />
+
+      <select onchange="console.log('estado foi modificado')">
+        <option
+          onselect="console.log('Opção selecionada')"
+          value="1"
+          placeholder="on select"
+        >
+          1
+        </option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+      </select>
+    </form>
+  </body>
+</html>

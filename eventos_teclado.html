@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eventos Teclado</title>
+    <style>
+      input {
+        display: block;
+        margin-bottom: 30px;
+      }
+    </style>
+    <script>
+      // Evento disparado ao pressionar uma tecla
+      // O evento keydown é disparado quando uma tecla é pressionada
+      // O evento keyup é disparado quando uma tecla é solta
+      // O evento keypress é disparado quando uma tecla é pressionada e solta
+      // O evento keydown é o mais utilizado
+      function acao1() {
+        alert("Evento disparado");
+      }
+    </script>
+  </head>
+  <body>
+    <input onkeydown="acao1()" type="text" placeholder="on key down" />
+    <input onkeyup="acao1()" type="text" placeholder="on key up" />
+    <input onkeypress="acao1()" type="text" placeholder="on key press" />
+  </body>
+</html>

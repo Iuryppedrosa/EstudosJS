@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Desafio 2</title>
+    <script>
+      var entradaUsuario = prompt('Digite: (valor 1) ("+" ou "-") (valor 2)');
+      var valores = entradaUsuario.split(" ");
+      var valor1 = parseInt(valores[0]);
+      var operador = valores[1];
+      var valor2 = parseInt(valores[2]);
+
+      document.write(`O resultado é: ${calcular(valor1, operador, valor2)}`);
+
+      function calcular(valor1, operador, valor2) {
+        if (operador === "+") {
+          return valor1 + valor2;
+        } else if (operador === "-") {
+          return valor1 - valor2;
+        } else {
+          return "Operador inválido";
+        }
+      }
+      window.write;
+    </script>
+  </head>
+  <body></body>
+</html>

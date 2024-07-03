@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eventos de Janela</title>
+  </head>
+  <body>
+    <script>
+      // Evento disparado ao carregar a página
+      window.onload = function () {
+        alert("Página carregada");
+      };
+
+      // Evento disparado ao fechar a página
+      window.onbeforeunload = function () {
+        return "Deseja realmente sair?";
+      };
+
+      // mais eventos
+    </script>
+
+    <h1>Eventos de Janela</h1>
+  </body>
+</html>
