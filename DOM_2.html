@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    h4 {
+      display: inline;
+    }
+  </style>
+  <body>
+    <div>
+      <input
+        onkeyup="capturarTecla()"
+        type="text"
+        id="input"
+        placeholder="digite um caracter aqui"
+      />
+    </div>
+    <div>
+      <h4>Letras:</h4>
+      <input type="text" id="letras" disabled="disabled" />
+      <h4>Numeros:</h4>
+      <input type="text" id="numeros" disabled="disabled" />
+    </div>
+    <script>
+      function capturarTecla() {
+        var input = document.getElementById("input").value;
+        document.getElementById("input").value = "";
+
+        var letras = document.getElementById("letras");
+        var numeros = document.getElementById("numeros");
+
+        if (isNaN(input)) {
+          letras.value += input;
+        } else {
+          numeros.value += input;
+        }
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      var nome = prompt("Digite seu nome: ");
+      var idade = prompt("Digite sua idade: ");
+      if (idade >= 18) {
+        document.write("<h1>Voce é maior de idade!</h1>");
+      } else {
+        document.write("<h1>Voce é menor de idade!</h1>");
+      }
+      document.write(`<h1>Ola, ${nome}, bem-vindo ao curso de JS!</h1>`);
+      document.write(
+        `<h2>Seu nome tem ${nome.length} letras e a segunda letra é ${nome[1]}</h2>`
+      );
+      document.write(
+        "<h1>Seu nome em maiusculo é: " + nome.toUpperCase() + "</h1>"
+      );
+      console.log(idade);
+    </script>
+  </head>
+  <body></body>
+</html>

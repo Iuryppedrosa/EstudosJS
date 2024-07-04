@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM - Docmuent object model</title>
+
+    <script>
+      // DOM - Document Object Model, principais metodos e propriedades
+      // getElementById
+      // getElementsByClassName
+      // getElementsByTagName
+      // querySelector
+      // querySelectorAll
+      // innerHTML
+      // innerText
+      // textContent
+      // value
+      // style
+      // addEventListener
+      // removeEventListener
+      // createElement
+      // appendChild
+      // removeChild
+      // parentNode
+      // childNodes
+      // nextSibling
+      // previousSibling
+      // firstChild
+      // lastChild
+      // getAttribute
+      // setAttribute
+    </script>
+  </head>
+  <body>
+    <div>
+      <input
+        type="text"
+        class="campo_texto"
+        id="input"
+        name="qualquercoisa"
+        placeholder="digite algo aqui"
+      />
+      <button onclick="enviarPalavra()" id="button">Enviar</button>
+      <h1>Palavra digitada:</h1>
+      <span id="palavraDigitada"></span>
+      <input type="text" id="palavra" disabled="disabled" />
+    </div>
+    <script>
+      var elemento = document.getElementById("input");
+      console.log(elemento);
+
+      var elemento2 = document.getElementsByTagName("input");
+      console.log(elemento2);
+
+      var elemento3 = document.getElementsByClassName("campo_texto");
+      console.log(elemento3);
+      function enviarPalavra() {
+        var palavra = document.getElementById("input").value;
+        document.getElementById("input").value = "";
+        document.getElementById("palavra").value = palavra;
+        document.getElementById("palavraDigitada").innerText = palavra;
+      }
+    </script>
+  </body>
+</html>
