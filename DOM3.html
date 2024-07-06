@@ -7,16 +7,23 @@
   </head>
   <body>
     <h3>Mudando estilo</h3>
-    <button type="button" onclick="modificarBotao('#ff0000')">Vermelho</button>
-    <button type="button" onclick="modificarBotao('#00f000')">Verde</button>
-    <button type="button" onclick="modificarBotao('#0000ff')">Azul</button>
+    <button type="button" onclick="modificarBotao('#ff0000', '200px')">
+      Vermelho
+    </button>
+    <button type="button" onclick="modificarBotao('#00f000', '400px')">
+      Verde
+    </button>
+    <button type="button" onclick="modificarBotao('#0000ff', '600px')">
+      Azul
+    </button>
     <hr />
     <div
       id="mudarCor"
       style="border: solid 1px black; width: 100px; height: 100px"
     ></div>
     <script>
-      function modificarBotao(cor) {
+      function modificarBotao(cor, tamanho) {
+        document.getElementById("mudarCor").style.width = tamanho;
         document.getElementById("mudarCor").style.backgroundColor = cor;
       }
     </script>
