@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pesquisa no array</title>
+  </head>
+  <body>
+    <script>
+      var list_frutas = Array();
+      list_frutas[0] = "Banana";
+      list_frutas[1] = "Maçã";
+      list_frutas[2] = "Morango";
+      list_frutas[3] = "Uva";
+      list_frutas[4] = "Pera";
+      list_frutas[5] = "Mamão";
+      list_frutas[6] = "Abacate";
+
+      if (list_frutas.indexOf("Abacate") == -1) {
+        console.log("Elemento não encontrado");
+        list_frutas.push("Abacate");
+        console.log(list_frutas);
+      } else {
+        console.log("Elemento encontrado");
+      }
+    </script>
+  </body>
+</html>
