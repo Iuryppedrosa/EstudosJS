@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div>
+      <input type="text" id="pesquisa" />
+      <button onclick="adicionar()">Adicionar</button>
+      <button onclick="ordenar()">Ordenar</button>
+      <h1 id="resultado"></h1>
+      <h2 id="avisos"></h2>
+    </div>
+    <script>
+      var objetos = Array("Cadeira", "Mesa", "Garfo");
+
+      function limpar() {
+        document.getElementById("pesquisa").value = "";
+      }
+      function adicionar() {
+        var objetoInserido = document.getElementById("pesquisa").value;
+        if (objetoInserido === "" || objetos.indexOf(objetoInserido) != -1) {
+          alert("Objeto já inserido ou campo vazio");
+          limpar();
+        } else {
+          objetos.push(objetoInserido);
+          document.getElementById(
+            "resultado"
+          ).innerHTML = `Obejtos adicionados: ${objetos}`;
+          limpar();
+        }
+      }
+
+      function ordenar() {
+        objetos.sort();
+        document.getElementById(
+          "resultado"
+        ).innerHTML = `Obejtos ordenados: ${objetos}`;
+        limpar();
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var list_frutas = Array();
+      list_frutas[0] = 12;
+      list_frutas[1] = 40;
+      list_frutas[2] = 3;
+      list_frutas[3] = 7;
+      list_frutas[4] = 19;
+      list_frutas[5] = 1;
+
+      list_frutas.sort(ordenarArray);
+      console.log(list_frutas);
+
+      function ordenarArray(a, b) {
+        return a - b;
+      }
+    </script>
+  </body>
+</html>
