@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tabuada com Laco encadeado</title>
+  </head>
+  <body>
+    <script>
+      // tabuada com laco encadeado
+      for (let i = 1; i <= 10; i++) {
+        document.write("<h2>Tabuada do " + i + "</h2>");
+        for (let j = 1; j <= 10; j++) {
+          document.write(i + " x " + j + " = " + i * j + "<br>");
+        }
+      }
+
+      for (let i = 1; i <= 10; i++) {
+        document.write(
+          `Tabuada de ${i} <br> = ${i * 1} <br> = ${i * 2} <br> = ${
+            i * 3
+          } <br> = ${i * 4} <br> = ${i * 5} <br> = ${i * 6} <br> = ${
+            i * 7
+          } <br> = ${i * 8} <br> = ${i * 9} <br> = ${i * 10} <br>`
+        );
+      }
+    </script>
+  </body>
+</html>

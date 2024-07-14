@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Estrutura Repeticao</title>
+  </head>
+  <body>
+    <script>
+      var lista_frutas = Array();
+      lista_frutas[1] = "Banana";
+      lista_frutas[2] = "Maçã";
+      lista_frutas[3] = "Morango";
+      lista_frutas[4] = "Uva";
+      lista_frutas[5] = "Pera";
+      lista_frutas[6] = "Mamão";
+      lista_frutas[7] = "Abacaxi";
+      lista_frutas[8] = "Melão";
+      lista_frutas[9] = "Melancia";
+      lista_frutas[10] = "Laranja";
+      lista_frutas[11] = "Limão";
+
+      var i = 1;
+      while (i <= 11) {
+        document.write(lista_frutas[i] + "<br>");
+        i++;
+
+        if (i === 3) {
+          lista_frutas[i] = "Abacate";
+          continue; // Pula para a próxima iteração
+        }
+        if (i === 10) {
+          break; // Para a execução do loop
+        }
+      }
+    </script>
+  </body>
+</html>
