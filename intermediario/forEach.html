@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>For Each Estudo</title>
+  </head>
+  <body>
+    <script>
+      var listaConvidade = [
+        "João",
+        "Maria",
+        "Ana",
+        "José",
+        "Pedro",
+        "Elisa",
+        "Carlos",
+        "Lucas",
+        "Marta",
+        "Paulo",
+      ];
+      // o forEach é uma função que recebe uma função de callback
+      listaConvidade.forEach(function (valor, indice, array) {
+        //logica
+        console.log(
+          "Nome: " + valor + " Indice: " + indice + " Array: " + array
+        );
+        if (valor == "Maria") {
+          console.log("Achei a Maria");
+          array[indice] = "Mariana";
+        }
+      });
+      console.log(listaConvidade);
+
+      listaConvidade.forEach((valor) => {
+        console.log(valor);
+      });
+    </script>
+  </body>
+</html>

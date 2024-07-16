@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Try and catch, finally throw</title>
+  </head>
+  <body>
+    <script>
+      // try, catch, finally, throw
+      var video = Array();
+      video[1] = Array();
+      video[1]["nome"] = "Fullmetal Alchemist";
+      video[1]["categoria"] = "Anime";
+
+      function getVideo() {
+        try {
+          console.log(video[2]["nome"]);
+        } catch (e) {
+          console.log("Erro: " + e);
+          throw new Error("Erro na função getVideo");
+        } finally {
+          console.log("Bloco finally");
+        }
+        console.log("Fim da função");
+      }
+      getVideo();
+    </script>
+  </body>
+</html>

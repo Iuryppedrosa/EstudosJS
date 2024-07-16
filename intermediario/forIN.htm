@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>For IN</title>
+  </head>
+  <body>
+    <div>
+      <h1>Lista de Convidados</h1>
+      <ul id="lista">
+        <li id="principal"></li>
+      </ul>
+    </div>
+    <script>
+      var listaConvidade = [
+        "João",
+        "Maria",
+        "Ana",
+        "José",
+        "Pedro",
+        "Elisa",
+        "Carlos",
+        "Lucas",
+        "Marta",
+        "Paulo",
+      ];
+      for (var i in listaConvidade) {
+        document.getElementById("lista").innerHTML +=
+          "<li>" + listaConvidade[i] + "</li>";
+      }
+      document.getElementById("principal").innerHTML = listaConvidade[1];
+    </script>
+  </body>
+</html>
