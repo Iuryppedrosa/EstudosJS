@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Timing</title>
+  </head>
+  <body>
+    <script>
+      //   window.setTimeout(function () {
+      //     window.location.href = "https://www.google.com";
+      //   }, 5000);
+
+      for (let i = 0; i < 1000; i++) {
+        window.setTimeout(function () {
+          document.write(`${i}`);
+        }, 1000 * i);
+        if (i == 10) {
+          clearInterval();
+          console.log(i);
+        }
+      }
+    </script>
+  </body>
+</html>

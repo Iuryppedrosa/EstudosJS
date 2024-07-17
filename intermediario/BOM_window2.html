@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aprendendo BOM</title>
+  </head>
+  <body>
+    <script>
+      var alturaNavegador = window.screen.availHeight;
+      var larguraNavegador = window.screen.availWidth;
+      console.log(alturaNavegador, larguraNavegador);
+
+      if (larguraNavegador > 640) {
+        document.write("Versao desktop");
+      } else {
+        document.write("Versao mobile");
+      }
+    </script>
+  </body>
+</html>
