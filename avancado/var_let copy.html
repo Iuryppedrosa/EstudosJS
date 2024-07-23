@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Escopo de variaveis LET e VAR</title>
+  </head>
+  <body>
+    <script>
+      var serie = "Friends";
+      {
+        var serie = "Game of Thrones";
+        console.log(serie);
+      }
+      console.log(serie);
+
+      let serie2 = "Breaking Bad";
+      {
+        let serie2 = "The Walking Dead";
+        console.log(serie2);
+      }
+      console.log(serie2);
+    </script>
+  </body>
+</html>

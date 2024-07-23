@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Estudando constante</title>
+  </head>
+  <body>
+    <script>
+      // constante é uma variavel que não pode ser alter
+      // o valor de uma constante não pode ser alterado
+      // o valor de uma constante deve ser atribuido na declaração
+      // o valor de uma constante não sofre hoisting
+      // o escopo de uma constante é o mesmo de uma variavel let
+
+      const serie = "Friends";
+      //serie = "Game of Thrones"; // TypeError: Assignment to constant variable.
+      console.log(serie);
+
+      const serie2 = "Breaking Bad";
+      function x() {
+        const serie2 = "The Walking Dead";
+        console.log(serie2);
+      }
+      x();
+      console.log(serie2);
+    </script>
+  </body>
+</html>

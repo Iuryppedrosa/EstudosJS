@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Escopo de variaveis LET e VAR</title>
+  </head>
+  <body>
+    <script>
+      // utlizando o VAR dentro de um bloco, a variavel sofre HOISTING
+      // hoisting é o elevamento para o proximo bloco, de bloco para funcao, ou funcao para global
+      // ou de bloco direto para global, quando possivel
+      //global
+      var serie = "Friends";
+      function x() {
+        var serie = "Game of Thrones";
+        //local
+        console.log(serie);
+        console.log(serie2);
+        if (true) {
+          var serie3 = "The Walking Dead";
+          console.log(serie);
+        }
+        console.log(serie3);
+      }
+
+      if (true) {
+        var serie2 = "Breaking Bad";
+        console.log(serie);
+      }
+      console.log(serie2);
+      x();
+
+      // utlizando o LET dentro de um bloco, a variavel não sofre HOISTING
+      if (true) {
+        let serie4 = "Friends";
+        console.log(serie4);
+      }
+      console.log(serie4); // ReferenceError: serie is not defined
+    </script>
+  </body>
+</html>
