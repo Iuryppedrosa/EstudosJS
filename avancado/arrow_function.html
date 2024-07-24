@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let quadrado = function (x) {
+        return x * x;
+      };
+
+      let quadrado2 = (x) => {
+        return x * x;
+      };
+
+      let quadrado3 = (x, y) => {
+        return x * x * y;
+      };
+
+      let verifica = (num) => {
+        if (num % 2 == 0) {
+          return "Par";
+        } else {
+          return "Ímpar";
+        }
+      };
+
+      document.write(verifica(4));
+      document.write("<br>");
+      document.write(quadrado(5));
+      document.write("<br>");
+      document.write(quadrado2(5));
+      document.write("<br>");
+      document.write(quadrado3(5, 2));
+    </script>
+  </body>
+</html>
