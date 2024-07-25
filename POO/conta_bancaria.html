@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Conta Bancaria</title>
+  </head>
+  <body>
+    <h1>Conta Bancaria</h1>
+    <div>
+      <select
+        name="contas"
+        id="contasCriadas"
+        onchange="atualizarSaldoContaSelecionada()"
+      >
+        <option value="">Selecione a conta</option>
+      </select>
+    </div>
+    <div>
+      <input type="text" id="agenciaConta" placeholder="Agencia" />
+      <input type="text" id="numeroConta" placeholder="Numero da Conta" />
+      <button onclick="definirConta()">Criar Conta</button>
+    </div>
+
+    <div>
+      <input type="text" id="deposito" placeholder="Deposito" />
+      <button onclick="realizarDeposito()">Depositar</button>
+    </div>
+
+    <input type="text" id="saque" placeholder="Saque" />
+    <button onclick="realizarSaque()">Sacar</button>
+
+    <p>Saldo: <span id="saldo">0</span></p>
+    <script src="./conta_bancaria.js"></script>
+  </body>
+</html>
